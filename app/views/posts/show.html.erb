@@ -1,0 +1,10 @@
+<h1><%= @post.title %></h1>
+<h3>By <%= @post.author %> at <%= @post.updated_at %></h3>
+
+<p><%= @post.content %></p>
+
+<p><%= link_to "Edit this Post", edit_post_url %></p>
+<p><%= link_to 'Delete Post', @post,
+    :confirm => 'Are you sure?',
+    :method => :delete %>
+<p><%= link_to "Back to Home", posts_url %></p>

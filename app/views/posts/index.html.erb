@@ -1,0 +1,9 @@
+<h1>Caitlin's Awesome Blog</h1>
+
+<%= link_to "New Post", new_post_url %>
+
+<% @posts.each do |post| %>
+  <h2><%= link_to post.title, post %></h2>
+  <h3>By <%= post.author %> at <%= post.created_at %></h3>
+  <p><%= post.content %></p>
+<% end %>
