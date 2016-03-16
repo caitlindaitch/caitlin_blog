@@ -13,6 +13,7 @@
 <% @comments.each do |comment| %>
   <p><%= comment.content %></p>
   <p>By <%= comment.author %> at <%= comment.updated_at %></p>
+  <p><%= link_to "Edit", edit_post_comment_url(@post, comment) %></p>
 <% end %>
 
 <p><%= link_to "New Comment", new_post_comment_url(@post) %></p>
