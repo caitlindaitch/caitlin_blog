@@ -16,6 +16,10 @@
 @import url(https://fonts.googleapis.com/css?family=Fjalla+One);
 @import url(https://fonts.googleapis.com/css?family=Average);
 
+body {
+  margin: 0;
+}
+
 .header {
  background: url('hero1.png');
  color: #fff;
@@ -66,12 +70,12 @@ h2 a:hover {
   margin: 25px;
 }
 
-.new-post {
+.inner-button {
   font-family: 'Fjalla One', sans-serif;
   font-size: 20px;
 }
 
-.new-post a:link, .new-post a:active, .new-post a:visited {
+.inner-button a:link, .inner-button a:active, .inner-button a:visited {
   color: #999;
   text-transform: uppercase;
   text-decoration: none;
@@ -80,13 +84,37 @@ h2 a:hover {
   border-radius: 5px;
 }
 
-.new-post a:hover {
+.inner-button a:hover {
   background-color: #999;
   text-transform: uppercase;
   text-decoration: none;
   color: #fff;
   border-radius: 5px;
   padding: 5px;
+  transition: .5s;
+}
+
+.small-button {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 20px;
+}
+
+.small-button a:link, .small-button a:active, .small-button a:visited {
+  color: #999;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 2px solid #999;
+  padding: 3px;
+  border-radius: 3px;
+}
+
+.small-button a:hover {
+  background-color: #999;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 3px;
+  padding: 3px;
   transition: .5s;
 }
 
@@ -106,4 +134,9 @@ p {
   width: 300px;
   margin: 0 auto;
   margin-bottom: 10px;
+}
+
+.post {
+  font-family: 'Average', serif;
+  font-size: 16px;
 }
