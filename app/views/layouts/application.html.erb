@@ -3,16 +3,11 @@
 <head>
   <title>Scribble</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <div class="container">
-    <div class="header">
-      <%= image_tag "scribble_logo.png" %>
-      <h1>Caitlin's Blog</h1>
-    </div>
-    <%= yield %>
-  </div>
+  <%= yield %>
 </body>
 </html>
