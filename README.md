@@ -2,4 +2,4 @@
 
 This is a CRUD application built using Ruby on Rails.
 
-<img src="erd.pdf">
+<img src="erd.png">
