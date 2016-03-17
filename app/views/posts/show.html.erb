@@ -14,7 +14,9 @@
   <% @comments.each do |comment| %>
     <p><%= comment.content %></p>
     <p>By <%= comment.author %> at <%= comment.updated_at %></p>
-    <p><%= link_to "Edit", edit_post_comment_url(@post, comment) %></p>
+    <div class="button">
+      <span class="small-button"><%= link_to "Edit", edit_post_comment_url(@post, comment) %></span>
+    </div>
   <% end %>
 
   <p>
