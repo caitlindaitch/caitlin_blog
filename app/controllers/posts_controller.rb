@@ -4,12 +4,15 @@ class PostsController < ApplicationController
   end
 
   def new
+    return unless authorized
     @post = Post.new
+    @username = @current_user.username
   end
 
   def create
+    return unless authorized
     @post = Post.create!(post_params)
-
+    @username = @current_user.username
     redirect_to post_url(@post)
   end
 
