@@ -5,12 +5,14 @@ class CommentsController < ApplicationController
 
   def new
     @post = Post.find(params[:post_id])
-    @comment = Comment.new
+    @comment = @post.comments.new
+    @username = @current_user.username
   end
 
   def create
     @post = Post.find(params[:post_id])
     @comment = @post.comments.create!(comment_params)
+    @username = @current_user.username
 
     redirect_to post_url(@post)
   end

@@ -10,7 +10,6 @@
   <% @posts.each do |post| %>
     <h2><%= link_to post.title, post %></h2>
     <span class="byline">By <%= post.author %> at <%= post.created_at %></span>
-    <p><%= post.content %></p>
-    <div class="divider"></div>
+    <div class="post-home"><%= post.content %></div>
   <% end %>
 </div>

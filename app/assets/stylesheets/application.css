@@ -31,10 +31,67 @@ body {
  flex-direction: column;
 }
 
+.header-detail {
+  background: url('hero2.png');
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
 .container {
  margin: 0 auto;
  width: 75%;
  text-align: center;
+ padding: 20px;
+ box-sizing: border-box;
+}
+
+.container a:link, .container a:active, .container a:visited {
+  color: #464646;
+  text-decoration: none;
+}
+
+.container a:hover {
+  opacity: .8;
+}
+
+.welcome a:link, .welcome a:active, .welcome a:visited {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 15px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.welcome a:hover {
+  opacity: .8;
+}
+
+.nav-links {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  text-transform: uppercase;
+}
+
+.nav-link a:link, .nav-link a:active, .nav-link a:visited {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 15px;
+  top: 10px;
+  right: 10px;
+  color: #fff;
+  text-decoration: none;
+  padding-left: 10px;
+}
+
+.nav-links a:hover {
+  opacity: .8;
 }
 
 h1 {
@@ -67,7 +124,7 @@ h2 a:hover {
 }
 
 .button {
-  margin: 25px;
+  margin-bottom: 15px;
 }
 
 .inner-button {
@@ -123,20 +180,31 @@ h2 a:hover {
   font-size: 12px;
 }
 
-p {
+.post-home {
   font-family: 'Average', serif;
   font-size: 16px;
-}
-
-.divider {
-  background-color: #999;
-  height: 2px;
-  width: 300px;
-  margin: 0 auto;
-  margin-bottom: 10px;
+  padding: 15px;
+  background-color: #ededed;
+  border-radius: 5px;
+  margin: 15px;
 }
 
 .post {
   font-family: 'Average', serif;
   font-size: 16px;
+}
+
+.post-options {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.post-options a:link, .post-options a:active, .post-options a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+.post-options a:hover {
+  opacity: .7;
 }
