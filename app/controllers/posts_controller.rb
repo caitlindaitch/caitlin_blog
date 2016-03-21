@@ -13,11 +13,13 @@ class PostsController < ApplicationController
     return unless authorized
     @post = Post.create!(post_params)
     @username = @current_user.username
+    # You did this below for destroy but you can just do @post and it will work the same
     redirect_to post_url(@post)
   end
 
   def show
     @post = Post.find(params[:id])
+    # Nice job implementing these nested resources/routes to display all comments associated with a Post!
     @comments = @post.comments
   end
 

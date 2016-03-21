@@ -1,5 +1,6 @@
-class UsersController < ApplicationController
 
+class UsersController < ApplicationController
+# Don't think you necessarily need this index here, unless your planning to display all users who signup
   def index
     @users = User.all
   end
@@ -13,7 +14,7 @@ class UsersController < ApplicationController
     session[:user_id] = @user.id
     redirect_to users_path(@user)
   end
-
+#
   def show
     @user = User.find(params[:id])
   end
