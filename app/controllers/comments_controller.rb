@@ -1,4 +1,5 @@
 class CommentsController < ApplicationController
+  # Again, your not using this route so theres no need to have index in your controller
   def index
     @comment = Comment.all
   end
